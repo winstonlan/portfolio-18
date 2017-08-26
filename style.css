@@ -1,0 +1,24 @@
+/* Tags */
+body {
+	font-family: 'Roboto Mono', monospace;
+}
+
+/* IDs */
+#content {
+	padding: 32px;
+}
+#header {
+	padding: 32px;
+}
+
+/* Classes */
+.section {
+	padding-top: 32px;
+	padding-bottom: 32px;
+}
+.section a {
+	color: black;
+}
+.section a:hover {
+	color: grey;
+}

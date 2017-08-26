@@ -8,18 +8,23 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
   </head>
 
   <body>
     
-    <div class="container">
+    <div id="header" class="container">
 
       <!-- Website Header -->
       <div class="row align-items-end">
-        <div class="col-lg-6">
-          <h1 class="text-left display-4">Winston Lan</h1>
+        <div class="col-sm-12 col-lg-6">
+          <h1 class="text-left display-5">Winston Lan</h1>
         </div>
-        <div class="col-lg-6">
+        <div class="col-sm-12 col-lg-6">
           <p class="text-right">
             <a href="mailto:winston.chunhua.lan@gmail.com">Email</a> / <a target="_blank" href="resume.pdf">Resume</a> / 
             <a href="https://www.linkedin.com/in/winstonlan/">LinkedIn</a> / <a href="https://www.github.com/winstonlan">Github</a>
@@ -30,10 +35,10 @@
 
     <hr>
 
-    <div class="container">
+    <div id="content" class="container">
       
       <!-- About Me Section -->
-      <div class="text-left">
+      <div class="text-left section">
         <h3>About Me</h3>
         <p>
           Hi there! I am a junior at <b>University of California Irvine</b>, studying <b>Computer Science</b>.
@@ -41,32 +46,32 @@
         </p> 
 
         <p>
-        I'm currently looking for Winter, Spring, and Summer 2018 Intership opportunities.
+        I'm currently looking for <b>Winter</b>, <b>Spring</b>, and <b>Summer 2018 Internship</b> opportunities.
         Contact me if interested! 
         </p>
       </div>
 
       <!-- Work Experience Section -->
-      <div class="text-left">
+      <div class="text-left section">
         <h3>Work Experience</h3>
-        <h5>Garmin Internation - Software Engineering Intern ( Summer 2017 )</h5>
+        <h5><u>Garmin Internation - Software Engineering Intern ( Summer 2017 )</u></h5>
         <p>
           At Garmin I worked as a member of their Consumer Automotive OEM Tuner team. My main project
-          at Garmin was to implemement, and test an API handler for DAB radio services, that updates image artwork
+          was to implemement, and test an API handler for DAB radio services, that updates image artwork
           whenever a new image becomes available.
         </p>
         <p>
           I also worked on writing wrapper classes to assist with interprocess communication between radio services,
-          and developed a JSON parser to parse configuration files used to describe resources available, and
-          the settings for interprocess resource management.
+          and developed a JSON parser to parse configuration files. The JSON parser was used to determine the amount of
+          resources that were available, and the settings for interprocess resource management.
         </p>
         <p><b>Technology Used:</b> C++, Lua, Google Test, Qt, D-bus</p>
       </div>
 
       <!-- Personal Projects Section -->
-      <div class="">
+      <div class="section">
         <h3>Personal Projects</h3>
-        <h5>Scales Timer</h5>
+        <h5><a href="https://github.com/winstonlan/Scales-Timer"><u>Scales Timer</u></a></h5>
         <p>
           At Garmin's Build What You Want Day Hackathon, I designed, and developed an iOS app that follows a scaling
           productivity workflow. The app also records the total amount of work performed each day, each week, and 
@@ -77,7 +82,7 @@
         </p>
         <p><b>Technology Used:</b> Swift, UIKit</p>
 
-        <h5>Magic8Ball</h5>
+        <h5><a href="https://github.com/winstonlan/Magic8Ball"><u>Magic8Ball</u></a></h5>
         <p>
           The Magic8Ball was a fun project to build, where I got to utilize concepts I learned from LondonAppBrewery's
           iOS course. The iOS app simulates a Magic 8 Ball, where users are able to ask the app a question, and tap or
@@ -85,14 +90,14 @@
         </p>
         <p><b>Technology Used:</b> Swift, UIKit</p>
 
-        <h5>PomoDomo</h5>
+        <h5><a href="https://github.com/winstonlan/PomoDoMo"><u>PomoDomo</u></a></h5>
         <p>
           PomoDomo is an iOS timer application that corresponds to the world famous Pomodoro productivity workflow.
           The app also records the number of Pomodoros the user completes each day!
         </p>
         <p><b>Technology Used:</b> Swift, UIKit</p>
 
-        <h5>Do It</h5>
+        <h5><a href="https://github.com/winstonlan/DoIt"><u>Do It</u></a></h5>
         <p>
           Do It was an iOS application that I built as part of an iOS course I took on Udemy. It is a simple To do list,
           that allows users to add new tasks, mark tasks as important, and delete tasks as well. The application uses
@@ -100,7 +105,7 @@
         </p>
         <p><b>Technology Used:</b> Swift, UIKit, CoreData</p>
 
-        <a href="http://simon-game.surge.sh/"><h5>Simon Game</h5></a>
+        <h5><a href="http://simon-game.surge.sh/"><u>Simon Game</u></a></h5>
         <p>
           The Simon Game was the capstone project in FreeCodeCamps Front End Development Certification. The web app is
           a web memory game that generates a random color pattern, and asks the user to replay the random color pattern 
@@ -109,7 +114,7 @@
         </p>
         <p><b>Technology Used:</b> HTML, CSS, JavaScript, jQuery, Bootstrap</p>
 
-        <a href="http://wiki-viewer.surge.sh/"><h5>Wikipedia Viewer</h5></a>
+        <h5><a href="http://wiki-viewer.surge.sh/"><u>Wikipedia Viewer</u></a></h5>
         <p>
           Wikipedia Viewer is a web app that allows the user to search for items, and returns the top ten most relevant 
           results. The app utilizes Wikipedia's API in order to make queries to the world famous encyclopedia. 
@@ -125,13 +130,6 @@
         <p><small>Made in Irvine, California</small></p>
       </div>
     </div>
-
-    
-
-    
-    
-    
-
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
