@@ -2,13 +2,23 @@
 body {
 	font-family: 'Roboto Mono', monospace;
 }
+img	{
+	border: 5px solid #4497fc;
+  	padding: 3px;
+	width: 175px;
+
+}
 
 /* IDs */
 #content {
-	padding: 32px;
+	padding: 64px;
 }
 #header {
-	padding: 32px;
+	padding: 16px;
+}
+#name {
+	color: ;
+	padding: 24px;
 }
 
 /* Classes */
